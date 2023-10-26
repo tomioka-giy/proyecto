@@ -1,0 +1,10 @@
+CREATE SCHEMA `banco` ;
+
+CREATE TABLE `cliente` (
+  `Dpi` varchar(45) NOT NULL,
+  `Nombre` varchar(45) DEFAULT NULL,
+  `Direccion` varchar(45) DEFAULT NULL,
+  `Telefono` varchar(45) DEFAULT NULL,
+  `Estado` tinyint(4) DEFAULT NULL,
+  PRIMARY KEY (`Dpi`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".registrarCitasActivity">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F6F6F6"
+            android:backgroundTint="#FFFEFE"
+            android:backgroundTintMode="add"
+            android:bufferType="editable"
+            android:clickable="false"
+            android:scrollbarDefaultDelayBeforeFade="300"
+            android:scrollbarFadeDuration="250"
+            android:scrollbarSize="5dp"
+            android:text="Bienvenido, puede registrar su Cita"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#800080"
+            android:textSize="24sp"
+            android:layout_marginTop="16dp"
+            android:textColorLink="#170D2B"
+            android:gravity="center"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/tnombre"
+            android:layout_width="342dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:hint="Ingrese su Nombre"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/tvehiculo"
+            android:layout_width="342dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:hint="Ingres su tipo de Vehiculo"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/tservicio"
+            android:layout_width="342dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:hint="Ingrese tipo de Servicio"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/thora"
+            android:layout_width="342dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:ems="10"
+            android:hint="Ingrese la hora (HH:MM)"
+            android:inputType="time" />
+
+        <EditText
+            android:id="@+id/tfecha"
+            android:layout_width="342dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:ems="10"
+            android:hint="Ingrese la fecha (dd/MM/yyyy)"
+            android:inputType="date" />
+
+        <Button
+            android:id="@+id/tguardar"
+            android:layout_width="353dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:onClick="Guardar"
+            android:text="Agregar Cita" />
+
+        <Button
+            android:id="@+id/tregresar1"
+            android:layout_width="353dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Menú Principal" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
